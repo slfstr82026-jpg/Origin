@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "origin"
+version = "1.0.0"
+description = "ORIGIN: wave-based causal reasoning toolkit."
+authors = [{name = "slfstr82026-jpg"}]
+readme = "README.md"
+requires-python = ">=3.10"
