@@ -1,9 +1,36 @@
 # Math Foundations
 
-ORIGIN represents semantic evidence as phasors. Each wave has an amplitude and phase. Aligned phases amplify evidence, opposing phases cancel or indicate contradiction, and the resultant vector summarizes accumulated support.
+ORIGIN represents semantic evidence as waves attached to causal relations.
 
-The contradiction index maps phase compatibility to `[0, 1]`:
+## Relation-to-wave conversion
 
-- `0.0`: highly supportive
-- `0.5`: ambiguous
-- `1.0`: strongly contradictory
+Each relation has:
+
+- amplitude: relation strength
+- phase: relation type
+
+Phase mapping:
+
+- `causes = 0`
+- `prevents = -π/2`
+- `treats = π`
+
+## Phase accumulation
+
+Across a path, ORIGIN accumulates phase with:
+
+```text
+Φ_final = Σ Δφ_i
+```
+
+## Interference
+
+When multiple causal paths arrive at the same node, their wave components are added algebraically. A high resultant-to-total-amplitude ratio is constructive; a low ratio is destructive.
+
+## Scientific contradiction index
+
+```text
+CI = |E_treat - E_cause| / (E_treat + E_cause)
+```
+
+`CI ≈ 0` indicates near-balanced competing evidence and can activate `SCIENTIFIC_CONTRADICTION`, especially when the wave interaction is destructive.

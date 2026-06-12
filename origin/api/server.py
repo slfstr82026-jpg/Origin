@@ -1,4 +1,4 @@
-"""FastAPI application factory."""
+"""FastAPI application factory for the ORIGIN Core API layer."""
 
 from __future__ import annotations
 

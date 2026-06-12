@@ -1,10 +1,8 @@
-"""Contradiction index demo."""
+"""Scientific contradiction protocol demo."""
 
-import math
-
-from origin.core.contradiction import contradiction_index
-from origin.core.phase_math import WaveComponent
+from origin.core.contradiction import scientific_contradiction_index, scientific_contradiction_protocol
 
 
 if __name__ == "__main__":
-    print(contradiction_index(WaveComponent(1.0, 0.0), WaveComponent(1.0, math.pi)))
+    ci = scientific_contradiction_index(e_treat=0.8, e_cause=0.8)
+    print(ci, scientific_contradiction_protocol(ci, destructive=True))
